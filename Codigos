@@ -1,8 +1,7 @@
 ´´´c
 
 #programa que gestione un catalogo basico de videojuegos. Definir estructura: nombre, genero, anio, puntuacion.
-
-#include <stdio.h>
+#include <stdio.h> 
 
 struct Juegos {
     char nombre [50];
