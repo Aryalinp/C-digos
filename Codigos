@@ -1,5 +1,4 @@
 ´´´c
-
 #programa que gestione un catalogo basico de videojuegos. Definir estructura: nombre, genero, anio, puntuacion.
 #include <stdio.h> 
 
@@ -46,5 +45,4 @@ struct Juegos {
 printf ("===========================\n");
     return 0;
 }
-
-´´´
+´´
