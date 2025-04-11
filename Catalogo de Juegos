@@ -1,4 +1,4 @@
-#Programa que gestione un catalogo basico de videojuegos. Definir estructura: nombre, genero, anio, puntuacion.
+# 1. Programa que gestione un catalogo basico de videojuegos. Definir estructura: nombre, genero, anio, puntuacion.
 
 ```c
 #include <stdio.h> 
@@ -8,39 +8,29 @@ struct Juegos {
     int year;
     float puntuacion;
 };
-
   int main() {
     struct Juegos Catalogo[3];
-
     printf("\nWelcome to the Gameshopp!\n");
     for (int i=0; i<3; i++) {
-
         printf("\nRegistrar Juego %d:\n", i+1);
         printf("Nombre: ");
         fgets(Catalogo[i].nombre,50,stdin);
-
-          printf("Genero: ");
+        printf("Genero: ");
         fgets(Catalogo[i].genero,50,stdin);
-
-          printf("Anio de publicacion: ");
+        printf("Anio de publicacion: ");
         scanf("%d", &Catalogo[i].year);
-
-
-          printf("Puntuacion: ");
+        printf("Puntuacion: ");
         scanf("%f", &Catalogo[i].puntuacion);
         getchar();
-
     }
 
     printf("\n======Catalogo General======\n");
-
     for (int i=0; i<3; i++) {
         printf("\nJuego %d:\n", i+1);
         printf("Nombre: %s ", Catalogo[i].nombre);
         printf("Genero: %s ", Catalogo[i].genero);
         printf("Anio de publicacion: %d\n ", Catalogo[i].year);
         printf("Puntuacion: %.1f\n ", Catalogo[i].puntuacion);
-
     }
 printf ("===========================\n");
     return 0;
